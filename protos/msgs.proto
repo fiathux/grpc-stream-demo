@@ -1,0 +1,25 @@
+syntax = "proto3";
+option go_package = "./pbmsg";
+
+// protoc requirements
+//  protoc >3.12.0
+//  protoc-gen-go >1.23.0
+//  protoc-gen-go-grpc >1.27.0
+
+package pbmsg;
+
+message msg_A {
+  string src = 1;
+  string data = 2;
+}
+
+message msg_B {
+  string src = 1;
+  int32 data = 2;
+}
+
+message msg_C {
+  string src = 1;
+  string a = 2;
+  int32 b = 3;
+}
